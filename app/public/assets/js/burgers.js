@@ -1,14 +1,14 @@
 $(()=>{
-    $(".devour").on("click", (event)=> {
-        var id = $(this).data("id");
-        
-        var devouredState = {
+    $(".devour").on("click", function(event){
+        var id = $(this).attr("data-id");
+        console.log(this)
+        var devoured = {
             devoured: true
         };
 
         $.ajax(`/api/burgers/${id}`, {
             type: "PUT",
-            data: devouredState
+            data: devoured
         }).then(()=>{
             console.log(`user ate a burger with the id of ${id}`);
 
