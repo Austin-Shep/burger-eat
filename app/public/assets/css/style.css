@@ -1,21 +1,12 @@
 #titleLine{
-
+    text-align: center;
 };
 
 .burgers{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
 };
 
 #burgerlist{
-
+    justify-content: center;
 };
-
-.listItem{
-
-};
-
-.devour{
-
-};
-

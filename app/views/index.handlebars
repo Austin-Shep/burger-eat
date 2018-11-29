@@ -1,20 +1,25 @@
-<h1 id="titleLine">Here are your choices of Burgers!</h1>
+<div class="container">
+    <h1 id="titleLine">Here are your choices of Burgers!</h1>
 
-<ul id="burgerList">
-    {{#each burgers}}
-        {{#unless devoured}}
-            {{> burgers/burger-block}}
-        {{/unless}}
-    {{/each}}
-</ul>
+    <ul id="burgerList" class="col m10">
+        {{#each burgers}}
+            {{#unless devoured}}
+                {{> burgers/burger-block}}
+            {{/unless}}
+        {{/each}}
+    </ul>
 
-<h2 class="formTitle">Add to the menu!</h2>
-<form class="create-form">
+    <h2 class="formTitle">Add to the menu!</h2>
+    <form class="create-form col s12">
 
-    <div class="form-group">
-        <label for="bur">Burger name:</label>
-        <input type="text" name="name" id="bur">
-    </div>
-    <button type="submit">Post that burger</button>
+        <div class="form-group input-field col s6">
+            <input type="text" name="name" id="bur" class="validate">
+            <label for="bur">Burger name:</label>
+        </div>
 
-</form>
+        <button class="waves-effect waves-light btn green" type="submit">Post that burger</button>
+        <br>
+        <br>
+        <br>
+    </form>
+</div>

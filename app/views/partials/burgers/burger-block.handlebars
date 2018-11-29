@@ -1,8 +1,15 @@
-<li class="listItem">
-    <img src="./assets/img/burger.jpg" alt="picture of burger" class="burgers">
-
-    {{burger_name}}
-
-    <button class="devour" data-id="{{id}}" data-devoured="{{devoured}}">DEVOUR THAT YUMMY BURGER</button>
-    
+<li class="listItem col s12 m6">
+    <div class="card green">
+        <div class="card-image">
+            <img src="./assets/img/burger.jpg" alt="picture of burger" class="center-align responsive-img burgers">
+        </div>
+        <div class=" center-align card-title white-text">
+         Burger Name: {{burger_name}}
+        </div>
+    <br>
+    <div class="center-align">
+        <button onclick="M.toast({html: 'Tasty!'})" class="devour waves-effect waves-light btn" data-id="{{id}}" data-devoured="{{devoured}}">DEVOUR THAT YUMMY BURGER</button>
+    </div>
+    <br>
+    </div>
 </li>

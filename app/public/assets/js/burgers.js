@@ -1,4 +1,6 @@
 $(()=>{
+    M.AutoInit();
+    
     $(".devour").on("click", function(event){
         var id = $(this).attr("data-id");
         console.log(this)
